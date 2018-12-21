@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "16913253-346b-4b95-b826-6266c58f6752",
+		"name": "Module 4 REST CRUD Mongoose",
+		"description": "commants to test the tutorial from Module 3 of Edx nodeJS course.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /accounts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"checking\",\n\t\"balance\": \"50000\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				},
+				"description": "Post"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /accounts/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"balance\": \"15000\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/5c1d26f87e5f7c23741cce60",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5c1d26f87e5f7c23741cce60"
+					]
+				},
+				"description": "make sure to replace :id with a valid document _id"
+			},
+			"response": []
+		},
+		{
+			"name": "DEL /accounts/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/5c1d26f87e5f7c23741cce60",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5c1d26f87e5f7c23741cce60"
+					]
+				},
+				"description": "make sure to replace :id with a document _id"
+			},
+			"response": []
+		}
+	]
+}
