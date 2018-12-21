@@ -6,8 +6,6 @@ mongoose.Promise = global.Promise
 const bodyParser = require('body-parser')
 const path = require('path')
 
-const routes = require('./routes')
-
 const url = 'mongodb://localhost:27017/edx-course-db'
 mongoose.connect(url)
 
